@@ -29,6 +29,7 @@ h1, h2 , p , h3 {
 
 .features-card {
   display: flex;
+  flex-wrap:wrap;
   flex-direction: row;
   column-gap: 2rem;
   border-radius: 10px;
@@ -38,9 +39,9 @@ h1, h2 , p , h3 {
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  flex-basis: 33%;
   box-sizing: border-box;
   transition: 0.4s;
+  width:300px;
 }
 
 
@@ -95,22 +96,21 @@ h1, h2 , p , h3 {
   font-weight: 400;
   text-transform: capitalize;
   color: var(--textcolor);
-  line-height: 14px;
+  line-height: 1.2em;
 }
 .features-card-item__featureslist div {
   align-self: center;
 }
 
-.progress-bar-section {
-  background-color: var(--white);
-  margin-top: 100px;
-  padding: 60px 40px;
-}
 
 .progress-bars {
   display: flex;
   flex-direction: column;
   row-gap:30px;
+  background-color: var(--white);
+  margin-top: 100px;
+  padding: 60px 40px;
+  flex-basis:100%;
 }
 
 .progress-bar-item {
@@ -151,7 +151,7 @@ h1, h2 , p , h3 {
     height: 100%;
     position: absolute;
     line-height: inherit;
-    width:50%;
+    
   }
 .w3-round-xlarge {
   border-radius: 16px;
@@ -174,5 +174,15 @@ h1, h2 , p , h3 {
   color:var(--secondary)
 }
 
-/* .container .features-card .features-card-item:hover .progress-bar-section  */
+.features-card-item:hover ~ .progress-bars .progress-bar-item .progressbar .progress-container .w3-progressbar--project{
+  width:50%;
+}
+
+.features-card-item:hover ~ .progress-bars .progress-bar-item .progressbar .progress-container .w3-progressbar--user{
+  width:20%;
+}
+
+.features-card-item:hover ~ .progress-bars .progress-bar-item .progressbar .progress-container .w3-progressbar--gb{
+  width:10%;
+}
 

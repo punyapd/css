@@ -3,6 +3,8 @@
     --white: #ffffff;
     --pink: rgb(246, 112, 221);
     --red: red;
+    --yellow:yellow;
+
   } 
 
 .icon-box {
@@ -70,7 +72,7 @@
   width: auto;
   white-space: nowrap;
   word-wrap: no-wrap;
-  box-shadow: 1px 1px 10px var(--pink);
+  box-shadow: 1px 1px 10px var(--yellow);
   border-radius: 5px;
   background-color: #fff;
   top: 40px;
@@ -102,11 +104,9 @@
   fill: var(--red);
 }
 .icon:hover .tooltip-cow {
-  color: var(--pink);
+  color: var(--yellow);
 }
-.icon-cow:hover svg {
-  fill: var(--pink);
-}
+
 
 .icon:hover .tooltip-dang {
   color: var(--blue);
@@ -119,6 +119,10 @@
 .icon-cow{
     background-image: url( './cow4.svg' );
     background-size: cover;
+ }
+
+ .icon-cow:hover{
+  background-image: url('./download.svg');
  }
 
  .tooltip-danger::before {

@@ -83,20 +83,8 @@ body {
   animation: rot 1s infinite;
 }
 
-.basic-info__profile-pic {
-  /* position: absolute;
 
-  bottom: -9px;
-  right: -35px;
-  transition: all 0.1s 1; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-/* .basic-info__profile-pic:hover{
-  
-animation:rot 1s infinite;
-} */
+
 
 @keyframes rot {
   to {
@@ -106,6 +94,11 @@ animation:rot 1s infinite;
 figure {
   height: 180px;
   width: 180px;
+ 
+}
+img{
+  margin:0;
+  padding:0;
 }
 
 .basic-info {
