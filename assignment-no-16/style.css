@@ -68,12 +68,7 @@ p{
   font-size: 1.5rem;
   color: black;
 }
-.header-logo{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
+
 
 .header-nav {
   display: flex;
@@ -102,7 +97,7 @@ input[type="checkbox"] {
 }
 
 input:checked ~ .sidebar {
-  display: block;
+  width: 70vw;
 }
 
 input:checked ~ .close {
@@ -116,16 +111,17 @@ label {
 .header-logo {
   height: 65px;
   width: 40px;
+  cursor: pointer;
 }
 
 .sidebar {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--bgcolor);
+  background-color: var(--white);
   height: 500px;
-  display: none;
-  width: 70vw;
+  width: 0;
+  transition: width 1.5s;
 }
 .mobile-menu{
   display:none;
@@ -321,14 +317,15 @@ label {
 .card__info h2 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 32px;
+  line-height: 1em;
   color: var(--light-grey);
 }
 
 .card__info h3 {
   font-weight: 800;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.3em;
+  transition:all 1s;
 }
 
 .card__info p {
