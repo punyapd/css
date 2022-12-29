@@ -273,6 +273,8 @@ label {
   grid-row: 4/5;
   grid-column: 1/4;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap:2rem;
 }
 
 .card__item {

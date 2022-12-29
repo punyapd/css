@@ -22,7 +22,7 @@ h1, h2 , p , h3 {
 }
 
 .container {
-  width: 50%;
+  width: 70%;
   margin: auto;
   padding: 100px 0;
 }
@@ -41,7 +41,7 @@ h1, h2 , p , h3 {
   border-radius: 20px;
   box-sizing: border-box;
   transition: 0.4s;
-  width:300px;
+  width:30%;
 }
 
 
@@ -108,9 +108,9 @@ h1, h2 , p , h3 {
   flex-direction: column;
   row-gap:30px;
   background-color: var(--white);
-  margin-top: 100px;
+  margin: 100px auto;
   padding: 60px 40px;
-  flex-basis:100%;
+  flex-basis:90%;
 }
 
 .progress-bar-item {

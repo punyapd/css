@@ -117,12 +117,12 @@
 }
 
 .icon-cow{
-    background-image: url( './cow4.svg' );
+    background-image: url( './images/cow4.svg' );
     background-size: cover;
  }
 
  .icon-cow:hover{
-  background-image: url('./download.svg');
+  background-image: url('./images/download.svg');
  }
 
  .tooltip-danger::before {
