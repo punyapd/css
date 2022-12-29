@@ -205,7 +205,6 @@ label {
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
-  line-height: 24px;
   transition: all 0.4s;
   letter-spacing: 0.252em;
   cursor:pointer;
@@ -296,6 +295,8 @@ label {
   transition:all 0.5s;
 }
 .card__image1{
+  height: 130px;
+  width:100px;
   position: absolute;
   top:0;
   left:0;
