@@ -50,6 +50,7 @@ p {
   /* grid-template-rows: 100px 300px 180px 130px; */
   grid-auto-rows: min-content;
   grid-gap: 1.2rem;
+  overflow-x:hidden;
 }
 
 .header {
@@ -239,8 +240,8 @@ input[type="checkbox"] {
   /* display:flex; */
   height: 130px;
   position: relative;
-  z-index: 2;
-  transition: all 0.5s;
+  opacity: 1;
+  transition:opacity all 1s;
 }
 .card__image1 {
   height: 130px;
@@ -248,11 +249,11 @@ input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  opacity: 0;
 }
 
 .card__item:hover .card__image1 {
-  z-index: 3;
+ opacity:1;
 }
 
 .card__item:hover > .card__info h3 {
